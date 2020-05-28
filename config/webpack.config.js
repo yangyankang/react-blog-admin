@@ -1,3 +1,4 @@
+// eslint-disable-next-line strict
 'use strict';
 
 const fs = require('fs');
@@ -35,6 +36,7 @@ const shouldUseSourceMap = process.env.GENERATE_SOURCEMAP !== 'false';
 // makes for a smoother build process.
 const shouldInlineRuntimeChunk = process.env.INLINE_RUNTIME_CHUNK !== 'false';
 
+// eslint-disable-next-line no-unused-vars
 const isExtendingEslintConfig = process.env.EXTEND_ESLINT === 'true';
 
 const imageInlineSizeLimit = parseInt(
